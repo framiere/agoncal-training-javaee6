@@ -39,7 +39,7 @@ public class DBPopulator {
     // ======================================
 
     @PostConstruct
-    private void createDummyData() {
+    void createDummyData() {
         createBooks();
         createCDs();
     }

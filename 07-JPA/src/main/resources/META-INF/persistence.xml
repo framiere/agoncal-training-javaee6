@@ -12,11 +12,11 @@
         <class>org.agoncal.training.javaee6.Track</class>
         <properties>
             <!-- Embedded mode -->
-            <!--<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>-->
-            <!--<property name="javax.persistence.jdbc.url" value="jdbc:derby:memory:lab07DB;create=true"/>-->
+            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:derby:memory:lab07DB;create=true"/>
             <!-- Client Server mode -->
-            <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/lab07DB;create=true"/>
+<!--             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/> -->
+<!--             <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/lab07DB;create=true"/> -->
             <property name="javax.persistence.jdbc.user" value="APP"/>
             <property name="javax.persistence.jdbc.password" value="APP"/>
 

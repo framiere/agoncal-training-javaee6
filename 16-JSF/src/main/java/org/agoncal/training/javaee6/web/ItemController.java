@@ -45,7 +45,7 @@ public class ItemController {
     // ======================================
 
     @PostConstruct
-    private void initList() {
+    void initList() {
         logger.fine("ItemController.initList()");
         bookList = itemEJB.findAllBooks();
         cdList = itemEJB.findAllCDs();

@@ -18,7 +18,7 @@ public class IssnGenerator implements NumberGenerator {
     // =             Attributes             =
     // ======================================
 
-    private int number;
+    private int number = Math.abs(new Random().nextInt());
 
     private Logger logger = Logger.getLogger("org.agoncal.training.javaee6");
 
@@ -27,8 +27,7 @@ public class IssnGenerator implements NumberGenerator {
     // ======================================
 
     @PostConstruct
-    private void init() {
-        number = Math.abs(new Random().nextInt());
+    void init() {
         logger.fine("IssnGenerator.init():" + number);
     }
 

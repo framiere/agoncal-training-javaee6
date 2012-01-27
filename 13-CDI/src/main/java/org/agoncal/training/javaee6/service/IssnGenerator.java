@@ -27,7 +27,7 @@ public class IssnGenerator implements NumberGenerator {
     // ======================================
 
     @PostConstruct
-    private void init() {
+    void init() {
         number = Math.abs(new Random().nextInt());
         logger.fine("IssnGenerator.init():" + number);
     }

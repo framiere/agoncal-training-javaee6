@@ -8,5 +8,5 @@ public class DatabaseProducer {
 
     @Produces
     @PersistenceContext(unitName = "trainingPU")
-    private EntityManager em;
+    EntityManager em;
 }

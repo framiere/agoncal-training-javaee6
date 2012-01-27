@@ -21,7 +21,8 @@ import java.util.logging.Logger;
 @Startup
 @DataSourceDefinition(name = "java:global/jdbc/lab15DS",
         className = "org.apache.derby.jdbc.EmbeddedDriver",
-        url = "jdbc:derby:memory:lab15DB;create=true;user=app;password=app")
+        url = "jdbc:derby:memory:lab15DB;create=true;user=app;password=app"
+)
 public class DBPopulator {
 
     // ======================================
@@ -38,7 +39,7 @@ public class DBPopulator {
     // ======================================
 
     @PostConstruct
-    private void createDummyData() {
+    void createDummyData() {
         createBooks();
         createCDs();
     }
